@@ -52,7 +52,8 @@ class MenuNavigationController: UINavigationController {
     }
     
     private func timerStart(timeInterval:TimeInterval){
-        self.timer  = Timer.scheduledTimer(timeInterval: timeInterval, target: self, selector: #selector(loginAPI), userInfo: nil, repeats: false)
+        let earlytime :TimeInterval = 100
+        self.timer  = Timer.scheduledTimer(timeInterval: max(timeInterval - earlytime ,0), target: self, selector: #selector(loginAPI), userInfo: nil, repeats: false)
     }
     
     fileprivate func addMenuButtton(rootViewController: UIViewController){

@@ -53,11 +53,8 @@ struct LoginAPIResponseData {
     
     
     public var token : String  {
-        set{
-            UserDefaults.standard.set(newValue, forKey: tokenKey )
-        }
-        get{
-           return  LoginAPIResponseData.getToken()
+        willSet{
+            UserDefaults.standard.set(newValue, forKey: tokenKey)
         }
     }
     
