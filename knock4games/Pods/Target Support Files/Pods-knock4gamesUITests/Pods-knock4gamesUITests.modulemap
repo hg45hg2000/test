@@ -1,0 +1,6 @@
+framework module Pods_knock4gamesUITests {
+  umbrella header "Pods-knock4gamesUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,800 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		415041FD1ECC06A10052BACB /* NetworkMannger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415041FC1ECC06A10052BACB /* NetworkMannger.swift */; };
+		415042001ECC09210052BACB /* MenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415041FF1ECC09210052BACB /* MenuNavigationController.swift */; };
+		415042031ECC11760052BACB /* LoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415042021ECC11760052BACB /* LoginAPI.swift */; };
+		415042061ECD4C1F0052BACB /* MemberAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415042051ECD4C1F0052BACB /* MemberAPI.swift */; };
+		4150420A1ECDEB2A0052BACB /* MemberListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415042081ECDEB2A0052BACB /* MemberListController.swift */; };
+		4150420B1ECDEB2A0052BACB /* MemberListController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 415042091ECDEB2A0052BACB /* MemberListController.xib */; };
+		418AA1251ECBED9500377325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418AA1241ECBED9500377325 /* AppDelegate.swift */; };
+		418AA1271ECBED9500377325 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418AA1261ECBED9500377325 /* ViewController.swift */; };
+		418AA12A1ECBED9500377325 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418AA1281ECBED9500377325 /* Main.storyboard */; };
+		418AA12C1ECBED9500377325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 418AA12B1ECBED9500377325 /* Assets.xcassets */; };
+		418AA12F1ECBED9500377325 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 418AA12D1ECBED9500377325 /* LaunchScreen.storyboard */; };
+		418AA13A1ECBED9600377325 /* knock4gamesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418AA1391ECBED9600377325 /* knock4gamesTests.swift */; };
+		418AA1451ECBED9600377325 /* knock4gamesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418AA1441ECBED9600377325 /* knock4gamesUITests.swift */; };
+		92E9C7B7E7CF7EAB539EAE51 /* Pods_knock4games.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 642CB05D3A776C0D850E79CF /* Pods_knock4games.framework */; };
+		D6DE9F0CD92A9AFAE83682C6 /* Pods_knock4gamesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76474D1C28318F324AFAF87E /* Pods_knock4gamesUITests.framework */; };
+		E23FC8A4473326B333941AE7 /* Pods_knock4gamesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE1F4B1A57DCC12DFE691EEE /* Pods_knock4gamesTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		418AA1361ECBED9600377325 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 418AA1191ECBED9500377325 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 418AA1201ECBED9500377325;
+			remoteInfo = knock4games;
+		};
+		418AA1411ECBED9600377325 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 418AA1191ECBED9500377325 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 418AA1201ECBED9500377325;
+			remoteInfo = knock4games;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		415041FC1ECC06A10052BACB /* NetworkMannger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkMannger.swift; sourceTree = "<group>"; };
+		415041FF1ECC09210052BACB /* MenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuNavigationController.swift; sourceTree = "<group>"; };
+		415042021ECC11760052BACB /* LoginAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAPI.swift; sourceTree = "<group>"; };
+		415042051ECD4C1F0052BACB /* MemberAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberAPI.swift; sourceTree = "<group>"; };
+		415042081ECDEB2A0052BACB /* MemberListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberListController.swift; sourceTree = "<group>"; };
+		415042091ECDEB2A0052BACB /* MemberListController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemberListController.xib; sourceTree = "<group>"; };
+		418AA1211ECBED9500377325 /* knock4games.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = knock4games.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		418AA1241ECBED9500377325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		418AA1261ECBED9500377325 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		418AA1291ECBED9500377325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		418AA12B1ECBED9500377325 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		418AA12E1ECBED9500377325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		418AA1301ECBED9500377325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		418AA1351ECBED9600377325 /* knock4gamesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = knock4gamesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		418AA1391ECBED9600377325 /* knock4gamesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = knock4gamesTests.swift; sourceTree = "<group>"; };
+		418AA13B1ECBED9600377325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		418AA1401ECBED9600377325 /* knock4gamesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = knock4gamesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		418AA1441ECBED9600377325 /* knock4gamesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = knock4gamesUITests.swift; sourceTree = "<group>"; };
+		418AA1461ECBED9600377325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		606791806925B1A068D3854D /* Pods-knock4gamesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-knock4gamesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-knock4gamesTests/Pods-knock4gamesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		642CB05D3A776C0D850E79CF /* Pods_knock4games.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_knock4games.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DF2084D54F693771DFFAC63 /* Pods-knock4gamesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-knock4gamesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-knock4gamesUITests/Pods-knock4gamesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		76474D1C28318F324AFAF87E /* Pods_knock4gamesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_knock4gamesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		870FD7C4420259B37118F76A /* Pods-knock4games.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-knock4games.release.xcconfig"; path = "Pods/Target Support Files/Pods-knock4games/Pods-knock4games.release.xcconfig"; sourceTree = "<group>"; };
+		96EC5BE172C99E38637B427F /* Pods-knock4gamesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-knock4gamesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-knock4gamesTests/Pods-knock4gamesTests.release.xcconfig"; sourceTree = "<group>"; };
+		AA1D868E148E3D38E5BF1701 /* Pods-knock4games.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-knock4games.debug.xcconfig"; path = "Pods/Target Support Files/Pods-knock4games/Pods-knock4games.debug.xcconfig"; sourceTree = "<group>"; };
+		AE1F4B1A57DCC12DFE691EEE /* Pods_knock4gamesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_knock4gamesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F99FC8D226DFEB77448249F5 /* Pods-knock4gamesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-knock4gamesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-knock4gamesUITests/Pods-knock4gamesUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		418AA11E1ECBED9500377325 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92E9C7B7E7CF7EAB539EAE51 /* Pods_knock4games.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		418AA1321ECBED9600377325 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E23FC8A4473326B333941AE7 /* Pods_knock4gamesTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		418AA13D1ECBED9600377325 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6DE9F0CD92A9AFAE83682C6 /* Pods_knock4gamesUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		215351B594609A6AE43B2E05 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA1D868E148E3D38E5BF1701 /* Pods-knock4games.debug.xcconfig */,
+				870FD7C4420259B37118F76A /* Pods-knock4games.release.xcconfig */,
+				606791806925B1A068D3854D /* Pods-knock4gamesTests.debug.xcconfig */,
+				96EC5BE172C99E38637B427F /* Pods-knock4gamesTests.release.xcconfig */,
+				6DF2084D54F693771DFFAC63 /* Pods-knock4gamesUITests.debug.xcconfig */,
+				F99FC8D226DFEB77448249F5 /* Pods-knock4gamesUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		415041FB1ECC06670052BACB /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				415042041ECD4BC40052BACB /* GetMemberAPI */,
+				415042011ECC11580052BACB /* Login API */,
+				415041FC1ECC06A10052BACB /* NetworkMannger.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		415041FE1ECC090A0052BACB /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				415041FF1ECC09210052BACB /* MenuNavigationController.swift */,
+			);
+			path = RootViewController;
+			sourceTree = "<group>";
+		};
+		415042011ECC11580052BACB /* Login API */ = {
+			isa = PBXGroup;
+			children = (
+				415042021ECC11760052BACB /* LoginAPI.swift */,
+			);
+			path = "Login API";
+			sourceTree = "<group>";
+		};
+		415042041ECD4BC40052BACB /* GetMemberAPI */ = {
+			isa = PBXGroup;
+			children = (
+				415042051ECD4C1F0052BACB /* MemberAPI.swift */,
+			);
+			path = GetMemberAPI;
+			sourceTree = "<group>";
+		};
+		415042071ECDEB100052BACB /* MemberListController */ = {
+			isa = PBXGroup;
+			children = (
+				415042081ECDEB2A0052BACB /* MemberListController.swift */,
+				415042091ECDEB2A0052BACB /* MemberListController.xib */,
+			);
+			path = MemberListController;
+			sourceTree = "<group>";
+		};
+		418AA1181ECBED9500377325 = {
+			isa = PBXGroup;
+			children = (
+				418AA1231ECBED9500377325 /* knock4games */,
+				418AA1381ECBED9600377325 /* knock4gamesTests */,
+				418AA1431ECBED9600377325 /* knock4gamesUITests */,
+				418AA1221ECBED9500377325 /* Products */,
+				215351B594609A6AE43B2E05 /* Pods */,
+				B165DBFD564D8036F3390EF7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		418AA1221ECBED9500377325 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				418AA1211ECBED9500377325 /* knock4games.app */,
+				418AA1351ECBED9600377325 /* knock4gamesTests.xctest */,
+				418AA1401ECBED9600377325 /* knock4gamesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		418AA1231ECBED9500377325 /* knock4games */ = {
+			isa = PBXGroup;
+			children = (
+				415041FE1ECC090A0052BACB /* RootViewController */,
+				415042071ECDEB100052BACB /* MemberListController */,
+				415041FB1ECC06670052BACB /* Server */,
+				418AA1241ECBED9500377325 /* AppDelegate.swift */,
+				418AA1261ECBED9500377325 /* ViewController.swift */,
+				418AA1281ECBED9500377325 /* Main.storyboard */,
+				418AA12B1ECBED9500377325 /* Assets.xcassets */,
+				418AA12D1ECBED9500377325 /* LaunchScreen.storyboard */,
+				418AA1301ECBED9500377325 /* Info.plist */,
+			);
+			path = knock4games;
+			sourceTree = "<group>";
+		};
+		418AA1381ECBED9600377325 /* knock4gamesTests */ = {
+			isa = PBXGroup;
+			children = (
+				418AA1391ECBED9600377325 /* knock4gamesTests.swift */,
+				418AA13B1ECBED9600377325 /* Info.plist */,
+			);
+			path = knock4gamesTests;
+			sourceTree = "<group>";
+		};
+		418AA1431ECBED9600377325 /* knock4gamesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				418AA1441ECBED9600377325 /* knock4gamesUITests.swift */,
+				418AA1461ECBED9600377325 /* Info.plist */,
+			);
+			path = knock4gamesUITests;
+			sourceTree = "<group>";
+		};
+		B165DBFD564D8036F3390EF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				642CB05D3A776C0D850E79CF /* Pods_knock4games.framework */,
+				AE1F4B1A57DCC12DFE691EEE /* Pods_knock4gamesTests.framework */,
+				76474D1C28318F324AFAF87E /* Pods_knock4gamesUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		418AA1201ECBED9500377325 /* knock4games */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 418AA1491ECBED9600377325 /* Build configuration list for PBXNativeTarget "knock4games" */;
+			buildPhases = (
+				C6C3F05F62AFE75D5C80D916 /* [CP] Check Pods Manifest.lock */,
+				418AA11D1ECBED9500377325 /* Sources */,
+				418AA11E1ECBED9500377325 /* Frameworks */,
+				418AA11F1ECBED9500377325 /* Resources */,
+				63B3A0E00D4366FCF8A62D98 /* [CP] Embed Pods Frameworks */,
+				7A8D28D65C88F2A17BFB2F2F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = knock4games;
+			productName = knock4games;
+			productReference = 418AA1211ECBED9500377325 /* knock4games.app */;
+			productType = "com.apple.product-type.application";
+		};
+		418AA1341ECBED9600377325 /* knock4gamesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 418AA14C1ECBED9600377325 /* Build configuration list for PBXNativeTarget "knock4gamesTests" */;
+			buildPhases = (
+				30E27D2B628BD517449CED74 /* [CP] Check Pods Manifest.lock */,
+				418AA1311ECBED9600377325 /* Sources */,
+				418AA1321ECBED9600377325 /* Frameworks */,
+				418AA1331ECBED9600377325 /* Resources */,
+				43E9EC00FB2DFB288A9ECE08 /* [CP] Embed Pods Frameworks */,
+				83DEDB1936F22C7B41BCB675 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				418AA1371ECBED9600377325 /* PBXTargetDependency */,
+			);
+			name = knock4gamesTests;
+			productName = knock4gamesTests;
+			productReference = 418AA1351ECBED9600377325 /* knock4gamesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		418AA13F1ECBED9600377325 /* knock4gamesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 418AA14F1ECBED9600377325 /* Build configuration list for PBXNativeTarget "knock4gamesUITests" */;
+			buildPhases = (
+				24C7E6F313B689836CE0697D /* [CP] Check Pods Manifest.lock */,
+				418AA13C1ECBED9600377325 /* Sources */,
+				418AA13D1ECBED9600377325 /* Frameworks */,
+				418AA13E1ECBED9600377325 /* Resources */,
+				44067B28E06BC98F40D9C235 /* [CP] Copy Pods Resources */,
+				0A437F5592E1BBFDE8CEC95F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				418AA1421ECBED9600377325 /* PBXTargetDependency */,
+			);
+			name = knock4gamesUITests;
+			productName = knock4gamesUITests;
+			productReference = 418AA1401ECBED9600377325 /* knock4gamesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		418AA1191ECBED9500377325 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "CHEN HENG Lin";
+				TargetAttributes = {
+					418AA1201ECBED9500377325 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 7LVJW6YG74;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					418AA1341ECBED9600377325 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 7LVJW6YG74;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 418AA1201ECBED9500377325;
+					};
+					418AA13F1ECBED9600377325 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 7LVJW6YG74;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 418AA1201ECBED9500377325;
+					};
+				};
+			};
+			buildConfigurationList = 418AA11C1ECBED9500377325 /* Build configuration list for PBXProject "knock4games" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 418AA1181ECBED9500377325;
+			productRefGroup = 418AA1221ECBED9500377325 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				418AA1201ECBED9500377325 /* knock4games */,
+				418AA1341ECBED9600377325 /* knock4gamesTests */,
+				418AA13F1ECBED9600377325 /* knock4gamesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		418AA11F1ECBED9500377325 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				418AA12F1ECBED9500377325 /* LaunchScreen.storyboard in Resources */,
+				4150420B1ECDEB2A0052BACB /* MemberListController.xib in Resources */,
+				418AA12C1ECBED9500377325 /* Assets.xcassets in Resources */,
+				418AA12A1ECBED9500377325 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		418AA1331ECBED9600377325 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		418AA13E1ECBED9600377325 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A437F5592E1BBFDE8CEC95F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-knock4gamesUITests/Pods-knock4gamesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		24C7E6F313B689836CE0697D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		30E27D2B628BD517449CED74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		43E9EC00FB2DFB288A9ECE08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-knock4gamesTests/Pods-knock4gamesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44067B28E06BC98F40D9C235 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-knock4gamesUITests/Pods-knock4gamesUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63B3A0E00D4366FCF8A62D98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-knock4games/Pods-knock4games-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A8D28D65C88F2A17BFB2F2F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-knock4games/Pods-knock4games-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83DEDB1936F22C7B41BCB675 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-knock4gamesTests/Pods-knock4gamesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6C3F05F62AFE75D5C80D916 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		418AA11D1ECBED9500377325 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				418AA1271ECBED9500377325 /* ViewController.swift in Sources */,
+				4150420A1ECDEB2A0052BACB /* MemberListController.swift in Sources */,
+				415041FD1ECC06A10052BACB /* NetworkMannger.swift in Sources */,
+				415042031ECC11760052BACB /* LoginAPI.swift in Sources */,
+				415042001ECC09210052BACB /* MenuNavigationController.swift in Sources */,
+				415042061ECD4C1F0052BACB /* MemberAPI.swift in Sources */,
+				418AA1251ECBED9500377325 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		418AA1311ECBED9600377325 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				418AA13A1ECBED9600377325 /* knock4gamesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		418AA13C1ECBED9600377325 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				418AA1451ECBED9600377325 /* knock4gamesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		418AA1371ECBED9600377325 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 418AA1201ECBED9500377325 /* knock4games */;
+			targetProxy = 418AA1361ECBED9600377325 /* PBXContainerItemProxy */;
+		};
+		418AA1421ECBED9600377325 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 418AA1201ECBED9500377325 /* knock4games */;
+			targetProxy = 418AA1411ECBED9600377325 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		418AA1281ECBED9500377325 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				418AA1291ECBED9500377325 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		418AA12D1ECBED9500377325 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				418AA12E1ECBED9500377325 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		418AA1471ECBED9600377325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		418AA1481ECBED9600377325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		418AA14A1ECBED9600377325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA1D868E148E3D38E5BF1701 /* Pods-knock4games.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7LVJW6YG74;
+				INFOPLIST_FILE = knock4games/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jambe.knock4games;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		418AA14B1ECBED9600377325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 870FD7C4420259B37118F76A /* Pods-knock4games.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7LVJW6YG74;
+				INFOPLIST_FILE = knock4games/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jambe.knock4games;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		418AA14D1ECBED9600377325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 606791806925B1A068D3854D /* Pods-knock4gamesTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7LVJW6YG74;
+				INFOPLIST_FILE = knock4gamesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jambe.knock4gamesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/knock4games.app/knock4games";
+			};
+			name = Debug;
+		};
+		418AA14E1ECBED9600377325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96EC5BE172C99E38637B427F /* Pods-knock4gamesTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7LVJW6YG74;
+				INFOPLIST_FILE = knock4gamesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jambe.knock4gamesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/knock4games.app/knock4games";
+			};
+			name = Release;
+		};
+		418AA1501ECBED9600377325 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DF2084D54F693771DFFAC63 /* Pods-knock4gamesUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7LVJW6YG74;
+				INFOPLIST_FILE = knock4gamesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jambe.knock4gamesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = knock4games;
+			};
+			name = Debug;
+		};
+		418AA1511ECBED9600377325 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F99FC8D226DFEB77448249F5 /* Pods-knock4gamesUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7LVJW6YG74;
+				INFOPLIST_FILE = knock4gamesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jambe.knock4gamesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = knock4games;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		418AA11C1ECBED9500377325 /* Build configuration list for PBXProject "knock4games" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				418AA1471ECBED9600377325 /* Debug */,
+				418AA1481ECBED9600377325 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		418AA1491ECBED9600377325 /* Build configuration list for PBXNativeTarget "knock4games" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				418AA14A1ECBED9600377325 /* Debug */,
+				418AA14B1ECBED9600377325 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		418AA14C1ECBED9600377325 /* Build configuration list for PBXNativeTarget "knock4gamesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				418AA14D1ECBED9600377325 /* Debug */,
+				418AA14E1ECBED9600377325 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		418AA14F1ECBED9600377325 /* Build configuration list for PBXNativeTarget "knock4gamesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				418AA1501ECBED9600377325 /* Debug */,
+				418AA1511ECBED9600377325 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 418AA1191ECBED9500377325 /* Project object */;
+}
