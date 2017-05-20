@@ -78,7 +78,7 @@ class NetworkMannger: NSObject {
             }
         }
         
-        if requestParameter.HTTPHeaders != nil{
+        if requestParameter.HTTPHeaders != nil {
             urlRequest.allHTTPHeaderFields = requestParameter.HTTPHeaders
         }
         

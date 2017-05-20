@@ -61,12 +61,16 @@ struct LoginAPIResponseData {
         }
     }
     
-    static func getToken() ->String {
-        return UserDefaults.standard.object(forKey: tokenKey) as! String
+    static func getToken() -> String {
+        return UserDefaults.standard.object(forKey: tokenKey) as? String ?? ""
     }
     
     static func removeToken() {
         UserDefaults.standard.removeObject(forKey: tokenKey)
+    }
+    
+    static func isUserLogin() -> Bool{
+        return (UserDefaults.standard.object(forKey: tokenKey) != nil)
     }
     
     private let parseToken = "token"

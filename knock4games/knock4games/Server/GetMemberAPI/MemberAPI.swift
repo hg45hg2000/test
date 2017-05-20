@@ -10,11 +10,13 @@ import UIKit
 import SwiftyJSON
 import Alamofire
 
+var tokenHeaders: HTTPHeaders =  LoginAPIResponseData.isUserLogin()  ?  ["Authorization":LoginAPIResponseData.getToken()] : ["" : ""]
 class MemberAPI: NSObject {
     typealias MemberAPIResponse = (MemberAPIResponseData) -> Void
     typealias ResultAPIResponse = (ResponseResultData) -> Void
     
-    static let tokenHeaders: HTTPHeaders = ["Authorization":LoginAPIResponseData.getToken()]
+   
+    
     
     static open func requestMemberListAPI(sourceView: UIView?,completion:@escaping MemberAPIResponse){
         NetworkMannger.sharedInstance().requestNetwork(requestParameter: NetWorkRequestParameter(shortUrl: "/member", parameter: nil, httpsMethod: .get, headers: tokenHeaders, sourceView: sourceView)) { (NetworkRequestResult) in
