@@ -29,7 +29,7 @@ class LoginAPI: NSObject {
     
     open func requestAPI(sourceView:UIView?,completion:@escaping LoginResponse){
         
-        NetworkMannger.sharedInstance().requestNetwork(requestParameter: NetWorkRequestParameter(shortUrl: nil, parameter: self.parameter, httpsMethod: .post, headers: nil, sourceView: sourceView)) { (result) in
+        NetworkMannger.sharedInstance().requestNetwork(requestParameter: NetWorkRequestParameter(shortUrl: .Login, parameter: self.parameter, httpsMethod: .post, headers: nil, sourceView: sourceView)) { (result) in
             switch result {
             case .success(let response):
                 completion(LoginAPIResponseData(response: response))

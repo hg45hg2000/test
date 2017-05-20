@@ -12,9 +12,16 @@ import SwiftyJSON
 
 let serverUrl = "http://52.197.192.141:3443"
 
+enum serverShortURL : String{
+    case Login  =  ""
+    case Member =  "/member"
+    
+}
+
+
 struct NetWorkRequestParameter {
     
-    var shortUrl : String? = ""
+    var shortUrl : serverShortURL
     
     let parameters : [String : Any]?
     
@@ -24,11 +31,8 @@ struct NetWorkRequestParameter {
     
     var sourceView : UIView?
     
-    init(shortUrl: String?,parameter:Dictionary<String, Any>?,httpsMethod : HTTPMethod ,headers :[String: String]?,sourceView : UIView?) {
-        
-        if let shortUrl = shortUrl{
-            self.shortUrl = shortUrl
-        }
+    init(shortUrl: serverShortURL,parameter:Dictionary<String, Any>?,httpsMethod : HTTPMethod ,headers :[String: String]?,sourceView : UIView?) {
+        self.shortUrl = shortUrl
         self.parameters = parameter
         self.httpsMethod = httpsMethod
         self.HTTPHeaders = headers
@@ -65,22 +69,10 @@ class NetworkMannger: NSObject {
     
     open func requestNetwork(requestParameter:NetWorkRequestParameter,completion:@escaping RefreshCompletion){
         
-        let url  = serverUrl + (requestParameter.shortUrl ?? "")
-        var urlRequest = URLRequest(url: URL(string: url)!)
-        urlRequest.httpMethod = requestParameter.httpsMethod.rawValue
+        let url  = serverUrl + (requestParameter.shortUrl.rawValue)
         
-        if requestParameter.parameters != nil {
-            do {
-                urlRequest.httpBody = try JSONSerialization.data(withJSONObject: requestParameter.parameters as Any, options: [])
-                urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
-            } catch {
-                
-            }
-        }
+        let urlRequest =  checkRequestParameter(url: url, requestParameter: requestParameter)
         
-        if requestParameter.HTTPHeaders != nil {
-            urlRequest.allHTTPHeaderFields = requestParameter.HTTPHeaders
-        }
         
         Alamofire.request(urlRequest).responseJSON { response in
                 
@@ -98,5 +90,23 @@ class NetworkMannger: NSObject {
             }
         }
     }
-    
+    private func checkRequestParameter(url:String,requestParameter : NetWorkRequestParameter) ->  URLRequest{
+        
+        var urlRequest = URLRequest(url: URL(string: url)!)
+        urlRequest.httpMethod = requestParameter.httpsMethod.rawValue
+        
+        if requestParameter.parameters != nil {
+            do {
+                urlRequest.httpBody = try JSONSerialization.data(withJSONObject: requestParameter.parameters as Any, options: [])
+                urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
+            } catch {
+                
+            }
+        }
+        
+        if requestParameter.HTTPHeaders != nil {
+            urlRequest.allHTTPHeaderFields = requestParameter.HTTPHeaders
+        }
+        return urlRequest
+    }
 }

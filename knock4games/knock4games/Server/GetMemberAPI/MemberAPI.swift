@@ -16,11 +16,9 @@ class MemberAPI: NSObject {
     typealias MemberAPIResponse = (MemberAPIResponseData) -> Void
     typealias ResultAPIResponse = (ResponseResultData) -> Void
     
-    static var tokenHeaders: HTTPHeaders =  LoginAPIResponseData.isUserLogin()  ?  ["Authorization":LoginAPIResponseData.getToken()] : ["" : ""]
-    
     
     static open func requestMemberListAPI(sourceView: UIView?,completion:@escaping MemberAPIResponse){
-        NetworkMannger.sharedInstance().requestNetwork(requestParameter: NetWorkRequestParameter(shortUrl: "/member", parameter: nil, httpsMethod: .get, headers: tokenHeaders, sourceView: sourceView)) { (NetworkRequestResult) in
+        NetworkMannger.sharedInstance().requestNetwork(requestParameter: NetWorkRequestParameter(shortUrl: .Member, parameter: nil, httpsMethod: .get, headers: self.creatTokenHeader(), sourceView: sourceView)) { (NetworkRequestResult) in
             switch NetworkRequestResult {
             case .success(let response):
                 completion(MemberAPIResponseData(json: response))
@@ -32,7 +30,7 @@ class MemberAPI: NSObject {
         }
     }
     static open func requestCreateMemberAPI(parameter:[String : Any]?,sourceView: UIView?,completion:@escaping ResultAPIResponse){
-        NetworkMannger.sharedInstance().requestNetwork(requestParameter: NetWorkRequestParameter(shortUrl: "/member", parameter: parameter, httpsMethod: .post, headers: tokenHeaders, sourceView: sourceView)) { (NetworkRequestResult) in
+        NetworkMannger.sharedInstance().requestNetwork(requestParameter: NetWorkRequestParameter(shortUrl: .Member, parameter: parameter, httpsMethod: .post, headers: self.creatTokenHeader(), sourceView: sourceView)) { (NetworkRequestResult) in
             switch NetworkRequestResult {
             case .success(let response):
                 completion(ResponseResultData(json: response))
@@ -42,6 +40,9 @@ class MemberAPI: NSObject {
                 
             }
         }
+    }
+    static private func creatTokenHeader() -> HTTPHeaders? {
+        return LoginAPIResponseData.isUserLogin()  ?  ["Authorization":LoginAPIResponseData.getToken()] : nil
     }
     
 }
