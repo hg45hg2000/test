@@ -27,7 +27,7 @@ class MemberListController: UIViewController {
     
     
     private func requestMemberList(){
-        MemberAPI.requestMemberListAPI(completion: {[weak self] (MemberAPIResponseData) in
+        MemberAPI.requestMemberListAPI(sourceView: self.view, completion: {[weak self] (MemberAPIResponseData) in
             self?.memberListData = MemberAPIResponseData
             self?.tableView.reloadData()
         })

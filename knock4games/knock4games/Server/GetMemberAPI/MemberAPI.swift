@@ -16,8 +16,8 @@ class MemberAPI: NSObject {
     
     static let tokenHeaders: HTTPHeaders = ["Authorization":LoginAPIResponseData.getToken()]
     
-    static open func requestMemberListAPI(completion:@escaping MemberAPIResponse){
-        NetworkMannger.sharedInstance().requestNetwork(requestParameter: NetWorkRequestParameter(shortUrl: "/member", parameter: nil, httpsMethod: .get, headers: tokenHeaders)) { (NetworkRequestResult) in
+    static open func requestMemberListAPI(sourceView: UIView?,completion:@escaping MemberAPIResponse){
+        NetworkMannger.sharedInstance().requestNetwork(requestParameter: NetWorkRequestParameter(shortUrl: "/member", parameter: nil, httpsMethod: .get, headers: tokenHeaders, sourceView: sourceView)) { (NetworkRequestResult) in
             switch NetworkRequestResult {
             case .success(let response):
                 completion(MemberAPIResponseData(json: response))
@@ -28,8 +28,8 @@ class MemberAPI: NSObject {
             }
         }
     }
-    static open func requestCreateMemberAPI(parameter:[String : Any]?,completion:@escaping ResultAPIResponse){
-        NetworkMannger.sharedInstance().requestNetwork(requestParameter: NetWorkRequestParameter(shortUrl: "/member", parameter: parameter, httpsMethod: .post, headers: tokenHeaders)) { (NetworkRequestResult) in
+    static open func requestCreateMemberAPI(parameter:[String : Any]?,sourceView: UIView?,completion:@escaping ResultAPIResponse){
+        NetworkMannger.sharedInstance().requestNetwork(requestParameter: NetWorkRequestParameter(shortUrl: "/member", parameter: parameter, httpsMethod: .post, headers: tokenHeaders, sourceView: sourceView)) { (NetworkRequestResult) in
             switch NetworkRequestResult {
             case .success(let response):
                 completion(ResponseResultData(json: response))

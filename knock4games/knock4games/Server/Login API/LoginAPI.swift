@@ -27,9 +27,9 @@ class LoginAPI: NSObject {
         return parameter
     }
     
-    open func requestAPI(completion:@escaping LoginResponse){
+    open func requestAPI(sourceView:UIView?,completion:@escaping LoginResponse){
         
-        NetworkMannger.sharedInstance().requestNetwork(requestParameter: NetWorkRequestParameter(shortUrl: nil, parameter: self.parameter, httpsMethod: .post, headers: nil)) { (result) in
+        NetworkMannger.sharedInstance().requestNetwork(requestParameter: NetWorkRequestParameter(shortUrl: nil, parameter: self.parameter, httpsMethod: .post, headers: nil, sourceView: sourceView)) { (result) in
             switch result {
             case .success(let response):
                 completion(LoginAPIResponseData(response: response))
@@ -53,8 +53,11 @@ struct LoginAPIResponseData {
     
     
     public var token : String  {
-        willSet{
+        set{
             UserDefaults.standard.set(newValue, forKey: tokenKey)
+        }
+        get{
+           return  LoginAPIResponseData.getToken()
         }
     }
     

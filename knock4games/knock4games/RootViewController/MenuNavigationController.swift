@@ -46,7 +46,7 @@ class MenuNavigationController: UINavigationController {
     }
     
     @objc fileprivate func  loginAPI(){
-        LoginAPI(name: "ken", passWord: "hello").requestAPI {[weak self] (response) in
+        LoginAPI(name: "ken", passWord: "hello").requestAPI(sourceView: self.view) {[weak self] (response) in
             self?.timerStart(timeInterval: TimeInterval(response.expTime - response.iatTime))
         }
     }
@@ -89,7 +89,7 @@ extension MenuNavigationController : UITableViewDelegate{
         case 1:
             controller = MemberListController(nibName:"MemberListController", bundle: nil)
         case 2:
-            MemberAPI.requestCreateMemberAPI(parameter: ["name" : "XXXXXXX"], completion: { (MemberAPIResponseData) in
+            MemberAPI.requestCreateMemberAPI(parameter: ["name" : "XXXXXXX"], sourceView: self.view, completion: { (MemberAPIResponseData) in
                 
             })
             

@@ -8,11 +8,14 @@
 
 import XCTest
 
+@testable import knock4games
 class knock4gamesTests: XCTestCase {
-    
+    var api : LoginAPI!
+   
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        api = LoginAPI(name: "ken", passWord: "1213")
     }
     
     override func tearDown() {
@@ -25,6 +28,10 @@ class knock4gamesTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
-  
+    func testApitest(){
+        api.requestAPI { (LoginAPIResponseData) in
+            
+        }
+    }
     
 }

@@ -22,7 +22,9 @@ struct NetWorkRequestParameter {
     
     var HTTPHeaders : [String: String]?
     
-    init(shortUrl: String?,parameter:Dictionary<String, Any>?,httpsMethod : HTTPMethod ,headers :[String: String]?) {
+    var sourceView : UIView?
+    
+    init(shortUrl: String?,parameter:Dictionary<String, Any>?,httpsMethod : HTTPMethod ,headers :[String: String]?,sourceView : UIView?) {
         
         if let shortUrl = shortUrl{
             self.shortUrl = shortUrl
@@ -30,6 +32,7 @@ struct NetWorkRequestParameter {
         self.parameters = parameter
         self.httpsMethod = httpsMethod
         self.HTTPHeaders = headers
+        self.sourceView = sourceView
     }
 }
 
@@ -79,8 +82,7 @@ class NetworkMannger: NSObject {
             urlRequest.allHTTPHeaderFields = requestParameter.HTTPHeaders
         }
         
-        Alamofire.request(urlRequest)
-            .responseJSON { response in
+        Alamofire.request(urlRequest).responseJSON { response in
                 
                 if let json = response.result.value as? [String: Any]
                 {
@@ -93,7 +95,7 @@ class NetworkMannger: NSObject {
                     DispatchQueue.main.async {
                         completion(.failure)
                     }
-                }
+            }
         }
     }
     
