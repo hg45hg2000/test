@@ -10,12 +10,13 @@ import UIKit
 import SwiftyJSON
 import Alamofire
 
-var tokenHeaders: HTTPHeaders =  LoginAPIResponseData.isUserLogin()  ?  ["Authorization":LoginAPIResponseData.getToken()] : ["" : ""]
+
+
 class MemberAPI: NSObject {
     typealias MemberAPIResponse = (MemberAPIResponseData) -> Void
     typealias ResultAPIResponse = (ResponseResultData) -> Void
     
-   
+    static var tokenHeaders: HTTPHeaders =  LoginAPIResponseData.isUserLogin()  ?  ["Authorization":LoginAPIResponseData.getToken()] : ["" : ""]
     
     
     static open func requestMemberListAPI(sourceView: UIView?,completion:@escaping MemberAPIResponse){
